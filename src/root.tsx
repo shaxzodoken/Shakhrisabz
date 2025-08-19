@@ -23,11 +23,14 @@ export default component$(() => {
             rel="manifest"
             href={`${import.meta.env.BASE_URL}manifest.json`}
           />
+          
         )}
+        
         <FlowbiteProviderHeader />
         <RouterHead />
       </head>
       <body lang="en">
+        
         <FlowbiteProvider theme="yellow" toastPosition="top-right">
           <RouterOutlet />
         </FlowbiteProvider>

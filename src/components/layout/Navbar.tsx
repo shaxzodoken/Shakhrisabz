@@ -22,8 +22,8 @@ export default component$(() => {
   const navigation = [
     { name: 'Bosh sahifa', href: '/' },
     { name: 'Tarix', href: '/history' },
-    { name: 'Yo‘nalishlar', href: '/routes' },
-    { name: 'Tadbirlar', href: '/events' },
+    { name: 'Yo‘nalishlar', href: '/road' },
+    { name: 'Tadbirlar', href: '/event' },
     { name: 'Aloqa', href: '/contact' },
   ];
 
