@@ -2,7 +2,6 @@
 import { component$, useSignal, $ } from '@builder.io/qwik';
 import Navbar from '~/components/layout/Navbar';
 import Footer from '~/components/layout/Footer';
-import Button from '~/components/ui/Button';
 
 export default component$(() => {
   const formData = useSignal({
@@ -155,14 +154,7 @@ export default component$(() => {
                   ></textarea>
                 </div>
                 
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  class="w-full gradient-primary hover:scale-105 transition-transform duration-200"
-                  disabled={isSubmitting.value}
-                >
-                  {isSubmitting.value ? 'Yuborilmoqda...' : 'Xabar yuborish'}
-                </Button>
+                
               </form>
             </div>
           </div>
@@ -174,12 +166,7 @@ export default component$(() => {
             <h2 class="text-4xl md:text-5xl font-bold mb-6">Shahrisabz sizni kutmoqda!</h2>
             <p class="text-xl mb-8 opacity-90">Shahrisabzning go'zalligi va tarixini o'z ko'zingiz bilan ko'ring.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="xl" variant="outline" class="border-white text-white hover:bg-white hover:text-primary-600">
-                Tashrif rejasini tuzing
-              </Button>
-              <Button size="xl" class="bg-white text-primary-600 hover:bg-gray-100">
-                Batafsil ma'lumot
-              </Button>
+              
             </div>
           </div>
         </section>

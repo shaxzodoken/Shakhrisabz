@@ -7,8 +7,8 @@ import HistoricalFigures from "~/components/historyPage/HistoricalFigures";
 import CulturalHeritage from "~/components/historyPage/CulturalHeritage";
 import HistoryGallery from "~/components/historyPage/HistoryGallery";
 import HistoryCTA from "~/components/historyPage/HistoryCTA";
-import InteractiveTimeline from "~/components/sections/InteractiveTimeline";
-import EraMap from "~/components/sections/EraMap";
+// import InteractiveTimeline from "~/components/sections/InteractiveTimeline";
+// import EraMap from "~/components/sections/EraMap";
 
 export default component$(() => {
   return (
@@ -20,8 +20,8 @@ export default component$(() => {
         <HistoricalFigures />
         <CulturalHeritage />
         <HistoryGallery />
-        <InteractiveTimeline />
-        <EraMap />
+        {/* <InteractiveTimeline />
+        <EraMap /> */}
         <HistoryCTA />
       </main>
       <Footer />

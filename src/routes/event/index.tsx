@@ -1,8 +1,7 @@
 // routes/events/index.tsx
-import { component$, useSignal, $ } from '@builder.io/qwik';
+import { component$, useSignal } from '@builder.io/qwik';
 import Navbar from '~/components/layout/Navbar';
 import Footer from '~/components/layout/Footer';
-import Button from '~/components/ui/Button';
 
 export default component$(() => {
   const selectedCategory = useSignal('all');
@@ -25,7 +24,7 @@ export default component$(() => {
       date: '2025-10-02',
       title: 'Oʻzbek Milliy Raqs Kechasi',
       location: 'Shahrisabz Madaniyat Saroyi',
-      desc: 'Eng yaxshi raqqoslar ijrosi va milliy kuy-qo'shiqlar oqshomi.',
+      desc: 'Eng yaxshi raqqoslar ijrosi va milliy kuy-qoshiqlar oqshomi',
       category: 'culture',
       month: 'october'
     },
@@ -118,9 +117,7 @@ export default component$(() => {
           <div class="relative z-10 text-center text-white">
             <h1 class="text-5xl md:text-7xl font-bold mb-4">Shahrisabz Tadbirlari</h1>
             <p class="text-xl md:text-2xl opacity-90 mb-8">Madaniyat, sanʼat va anʼanalar</p>
-            <Button size="xl" variant="outline" class="border-white text-white hover:bg-white hover:text-primary-600">
-              Tadbirlar jadvali
-            </Button>
+            
           </div>
         </section>
 
@@ -206,9 +203,7 @@ export default component$(() => {
                     {event.desc}
                   </p>
                   <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                    <Button size="sm" class="w-full gradient-primary hover:scale-105 transition-transform duration-200">
-                      Batafsil maʼlumot
-                    </Button>
+                    
                   </div>
                 </div>
               </div>
@@ -236,12 +231,7 @@ export default component$(() => {
                   mahalliy va xalqaro sanʼatkorlarni birlashtiradi.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" variant="outline" class="border-white text-white hover:bg-white hover:text-primary-600">
-                    Batafsil maʼlumot
-                  </Button>
-                  <Button size="lg" class="bg-white text-primary-600 hover:bg-gray-100">
-                    Ro'yxatdan o'tish
-                  </Button>
+                  
                 </div>
               </div>
             </div>
@@ -275,12 +265,7 @@ export default component$(() => {
             <h2 class="text-4xl md:text-5xl font-bold mb-6">Shahrisabz Madaniyatini Birgalikda Bayram Qiling!</h2>
             <p class="text-xl mb-8 opacity-90">Tadbirlar jadvalini kuzatib boring va o'zingizni qiziqtirgan voqealarda ishtirok eting.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="xl" variant="outline" class="border-white text-white hover:bg-white hover:text-primary-600">
-                Tadbirlar jadvali
-              </Button>
-              <Button size="xl" class="bg-white text-primary-600 hover:bg-gray-100">
-                Ro'yxatdan o'tish
-              </Button>
+              
             </div>
           </div>
         </section>
