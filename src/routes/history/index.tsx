@@ -6,7 +6,8 @@ import HistoricalFigures from "~/components/historyPage/HistoricalFigures";
 import CulturalHeritage from "~/components/historyPage/CulturalHeritage";
 import HistoryGallery from "~/components/historyPage/HistoryGallery";
 import HistoryCTA from "~/components/historyPage/HistoryCTA";
-import { HistoryHero } from "~/components/historyPage/HistoryHero";
+import { HistoryHeroPro } from "~/components/historyPage/HistoryHero";
+import { TimelinePro } from "~/components/landing/Timeline";
 // import InteractiveTimeline from "~/components/sections/InteractiveTimeline";
 // import EraMap from "~/components/sections/EraMap";
 
@@ -15,7 +16,10 @@ export default component$(() => {
     <>
       <Navbar />
       <main class="pt-16">
-        <HistoryHero />
+        <HistoryHeroPro />
+        <section id="timeline">
+      <TimelinePro />
+    </section>
         <HistoricalEvents />
         <HistoricalFigures />
         <CulturalHeritage />

@@ -25,6 +25,7 @@ export default component$(() => {
     { name: 'Yo‘nalishlar', href: '/road' },
     { name: 'Tadbirlar', href: '/event' },
     { name: 'Aloqa', href: '/contact' },
+    { name: 'Biz haqimizda', href: '/about' },
   ];
 
   return (
